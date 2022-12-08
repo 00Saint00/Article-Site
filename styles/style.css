@@ -7,6 +7,7 @@
 
 body {
   background-color: hsl(218, 23%, 16%);
+  color: white;
 }
 
 .container {
@@ -95,21 +96,35 @@ form fieldset {
   padding: 0.5rem;
   margin: 1rem;
   border-radius: 5px;
+  overflow-x: hidden;
 }
 
 form fieldset legend {
   margin-left: 1rem;
+  text-align: left;
 }
 
 input {
   width: 50%;
 }
 
+form fieldset input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  background-color: unset;
+}
+
+form fieldset input:focus {
+  outline: 00;
+}
+
 form button {
   cursor: pointer;
-  width: 5rem;
+  width: 15rem;
+  height: 2rem;
   border-radius: 5px;
-  align-items: center;
+  margin-left: 13rem;
 }
 
 form button:hover {
